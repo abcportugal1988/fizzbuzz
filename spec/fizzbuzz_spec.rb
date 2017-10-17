@@ -19,5 +19,10 @@ describe 'fizzbuzz' do
   it 'returns "fizz" when passed multiple of 3 and 5' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
-
+  it "returns given number when passed a non-multiple of 3 or 5" do
+    expect(fizzbuzz(0)).to eq 0
+  end
+  it "returns given number when passed a non-multiple of 3 or 5" do
+    expect(fizzbuzz(4)).to eq 4
+  end
 end
